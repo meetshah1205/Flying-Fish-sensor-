@@ -1,5 +1,5 @@
-const int sensorPin = 2;  // Connect OUT of flying fish sensor to digital pin 2
-const int ledPin = 13;    // Built-in LED pin
+const int sensorPin = 2;  
+const int ledPin = 13;    
 
 void setup() {
   pinMode(sensorPin, INPUT);
@@ -12,7 +12,7 @@ void loop() {
   Serial.print("Sensor Value: ");
   Serial.println(sensorValue);
 
-  if (sensorValue == LOW) {   // Usually LOW means object detected, but test both LOW and HIGH
+  if (sensorValue == LOW) {   
     digitalWrite(ledPin, HIGH);
   } else {
     digitalWrite(ledPin, LOW);
